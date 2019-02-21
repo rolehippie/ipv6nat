@@ -1,0 +1,35 @@
+- name: download binary
+  get_url:
+    url: '{{ ipv6nat_download }}'
+    dest: /usr/bin/ipv6nat
+    mode: 0774
+  tags:
+    - ipv6nat
+
+- name: write default
+  notify:
+    - restart ipv6nat
+  template:
+    src: default.j2
+    dest: /etc/default/ipv6nat
+  tags:
+    - ipv6nat
+
+- name: prepare service
+  notify:
+    - restart ipv6nat
+  template:
+    src: service.j2
+    dest: /etc/systemd/system/ipv6nat.service
+  tags:
+    - ipv6nat
+
+- name: start service
+  systemd:
+    name: ipv6nat
+    state: started
+    daemon_reload: yes
+    masked: no
+    enabled: yes
+  tags:
+    - ipv6nat

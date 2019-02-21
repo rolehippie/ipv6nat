@@ -1,0 +1,15 @@
+[Unit]
+Description=IPv6NAT
+
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+RestartSec=10s
+EnvironmentFile=/etc/environment
+
+ExecStart=/usr/bin/ipv6nat -cleanup -retry
+
+[Install]
+WantedBy=multi-user.target
