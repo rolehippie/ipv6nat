@@ -1,12 +1,14 @@
-- name: download binary
+# Standards: 0.1
+---
+- name: Download service binary
   get_url:
-    url: '{{ ipv6nat_download }}'
+    url: "{{ ipv6nat_download }}"
     dest: /usr/bin/ipv6nat
     mode: 0774
   tags:
     - ipv6nat
 
-- name: write default
+- name: Write env config
   notify:
     - restart ipv6nat
   template:
@@ -15,7 +17,7 @@
   tags:
     - ipv6nat
 
-- name: prepare service
+- name: Write service file
   notify:
     - restart ipv6nat
   template:
@@ -24,12 +26,14 @@
   tags:
     - ipv6nat
 
-- name: start service
+- name: Start ipv6nat service
   systemd:
     name: ipv6nat
     state: started
-    daemon_reload: yes
-    masked: no
-    enabled: yes
+    daemon_reload: True
+    masked: False
+    enabled: True
   tags:
     - ipv6nat
+
+...
