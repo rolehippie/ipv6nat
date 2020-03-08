@@ -1,5 +1,9 @@
 # Standards: 0.1
 ---
+# @meta author:value: [Thomas Boerger](https://github.com/tboerger)
+# @meta dependencies: >
+# [docker](https://github.com/rolehippie/docker)
+# @end
 galaxy_info:
   author: Thomas Boerger
   description: Ansible role to configure ipv6nat
@@ -15,7 +19,6 @@ galaxy_info:
     - nat
     - docker
 
-# rolehippie.docker
 dependencies: []
 
 ...
