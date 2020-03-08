@@ -1,30 +1,39 @@
 # ipv6nat
 
-TBD
+[![Build Status](https://cloud.drone.io/api/badges/rolehippie/ipv6nat/status.svg)](https://cloud.drone.io/rolehippie/ipv6nat)
 
+Ansible role to configure ipv6nat
 
-## Security
+## Table of content
 
-If you find a security issue please contact thomas@webhippie.de first.
+* [Default Variables](#default-variables)
+  * [ipv6nat_download](#ipv6nat_download)
+* [Dependencies](#dependencies)
+* [License](#license)
+* [Author](#author)
 
+---
 
-## Contributing
+## Default Variables
 
-Fork -> Patch -> Push -> Pull Request
+### ipv6nat_download
 
+Download URL for ipv6nat binary
 
-## Authors
+#### Default value
 
-* [Thomas Boerger](https://github.com/tboerger)
+```YAML
+ipv6nat_download: https://github.com/robbertkl/docker-ipv6nat/releases/download/v0.4.0/docker-ipv6nat.amd64
+```
 
+## Dependencies
+
+- '[docker](https://github.com/rolehippie/docker)'
 
 ## License
 
 Apache-2.0
 
+## Author
 
-## Copyright
-
-```
-Copyright (c) 2018 Thomas Boerger <thomas@webhippie.de>
-```
+[Thomas Boerger](https://github.com/tboerger)
