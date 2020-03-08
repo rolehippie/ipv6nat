@@ -15,7 +15,7 @@ galaxy_info:
     - nat
     - docker
 
-dependencies:
-  - rolehippie.docker
+# rolehippie.docker
+dependencies: []
 
 ...
