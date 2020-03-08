@@ -28,9 +28,7 @@ ipv6nat_download: https://github.com/robbertkl/docker-ipv6nat/releases/download/
 
 ## Dependencies
 
-- '['
-- '  "[docker](https://github.com/rolehippie/docker)"'
-- ']'
+* [docker](https://github.com/rolehippie/docker)
 
 ## License
 
