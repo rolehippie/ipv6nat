@@ -4,7 +4,9 @@
   get_url:
     url: "{{ ipv6nat_download }}"
     dest: /usr/bin/ipv6nat
-    mode: 0774
+    owner: root
+    group: root
+    mode: u=rwx,g=rx,o=rx
   tags:
     - ipv6nat
 
@@ -14,6 +16,9 @@
   template:
     src: default.j2
     dest: /etc/default/ipv6nat
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
   tags:
     - ipv6nat
 
@@ -23,6 +28,9 @@
   template:
     src: service.j2
     dest: /etc/systemd/system/ipv6nat.service
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
   tags:
     - ipv6nat
 
