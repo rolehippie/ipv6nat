@@ -3,7 +3,7 @@
 - name: Converge
   hosts: all
   roles:
-    - role: docker
-    - role: ipv6nat
+    - role: rolehippie.docker
+    - role: rolehippie.ipv6nat
 
 ...
