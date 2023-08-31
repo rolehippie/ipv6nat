@@ -1,6 +1,6 @@
 # ipv6nat
 
-[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&amp;logoColor=white)](https://github.com/rolehippie/ipv6nat)
+[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/ipv6nat)
 [![General Workflow](https://github.com/rolehippie/ipv6nat/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/ipv6nat/actions/workflows/general.yml)
 [![Readme Workflow](https://github.com/rolehippie/ipv6nat/actions/workflows/docs.yml/badge.svg)](https://github.com/rolehippie/ipv6nat/actions/workflows/docs.yml)
 [![Galaxy Workflow](https://github.com/rolehippie/ipv6nat/actions/workflows/galaxy.yml/badge.svg)](https://github.com/rolehippie/ipv6nat/actions/workflows/galaxy.yml)
@@ -29,7 +29,6 @@ Building and improving this Ansible role have been sponsored by my current and p
 
 - Minimum Ansible version: `2.10`
 
-
 ## Default Variables
 
 ### ipv6nat_download
@@ -39,7 +38,8 @@ Download URL for ipv6nat binary
 #### Default value
 
 ```YAML
-ipv6nat_download: https://github.com/robbertkl/docker-ipv6nat/releases/download/v0.4.0/docker-ipv6nat.amd64
+ipv6nat_download: 
+  https://github.com/robbertkl/docker-ipv6nat/releases/download/v0.4.0/docker-ipv6nat.amd64
 ```
 
 ## Discovered Tags
