@@ -1,4 +1,3 @@
-# Standards: 1.2
 ---
 - name: Download service binary
   get_url:
