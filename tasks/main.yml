@@ -1,7 +1,6 @@
-# Standards: 1.2
 ---
 - name: Download service binary
-  get_url:
+  ansible.builtin.get_url:
     url: "{{ ipv6nat_download }}"
     dest: /usr/bin/ipv6nat
     owner: root
@@ -13,7 +12,7 @@
 - name: Write env config
   notify:
     - Restart ipv6nat
-  template:
+  ansible.builtin.template:
     src: default.j2
     dest: /etc/default/ipv6nat
     owner: root
@@ -25,7 +24,7 @@
 - name: Write service file
   notify:
     - Restart ipv6nat
-  template:
+  ansible.builtin.template:
     src: service.j2
     dest: /etc/systemd/system/ipv6nat.service
     owner: root
@@ -35,7 +34,7 @@
     - ipv6nat
 
 - name: Start ipv6nat service
-  systemd:
+  ansible.builtin.systemd:
     name: ipv6nat
     state: started
     daemon_reload: True
