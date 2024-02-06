@@ -49,7 +49,7 @@ ipv6nat_download:
 
 ## Dependencies
 
-- [rolehippie.docker](https://github.com/rolehippie/docker)
+- None
 
 ## License
 
