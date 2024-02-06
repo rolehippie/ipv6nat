@@ -1,6 +1,6 @@
 ---
 - name: Restart ipv6nat
-  systemd:
+  ansible.builtin.systemd:
     name: ipv6nat
     state: restarted
     daemon_reload: True
