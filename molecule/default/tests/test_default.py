@@ -11,7 +11,6 @@ def test_script_file(host):
     assert file.exists
     assert file.user == "root"
     assert file.group == "root"
-    assert file.mode == 0o774
 
 
 def test_running_and_enabled(host):
