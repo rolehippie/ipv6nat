@@ -1,4 +1,5 @@
 ---
-role_name: ipv6nat
+role:
+  name: ipv6nat
 
 ...
