@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/rolehippie/ipv6nat/compare/v2.0.0...v2.1.0) (2025-11-17)
+
+
+### Features
+
+* apply new repo structure and update linting ([930f150](https://github.com/rolehippie/ipv6nat/commit/930f1505c0dc6538f0c4d03bc2b83d979c395546))
+
 ## [2.0.0](https://github.com/rolehippie/ipv6nat/compare/v1.0.0...v2.0.0) (2024-02-12)
 
 
