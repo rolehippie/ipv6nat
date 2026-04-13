@@ -38,8 +38,7 @@ Download URL for ipv6nat binary
 #### Default value
 
 ```YAML
-ipv6nat_download: 
-  https://github.com/robbertkl/docker-ipv6nat/releases/download/v0.4.0/docker-ipv6nat.amd64
+ipv6nat_download: https://github.com/robbertkl/docker-ipv6nat/releases/download/v0.4.0/docker-ipv6nat.amd64
 ```
 
 ## Discovered Tags
