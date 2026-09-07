@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.3.0](https://github.com/rolehippie/ipv6nat/compare/v2.2.0...v2.3.0) (2026-09-07)
+
+### Features
+
+* add separate requirements for molecule run ([0f595ea](https://github.com/rolehippie/ipv6nat/commit/0f595ea460bb2cc2ac295d3b856d8301653ee287))
+
 ## [2.2.0](https://github.com/rolehippie/ipv6nat/compare/v2.1.0...v2.2.0) (2026-07-27)
 
 ## [2.1.0](https://github.com/rolehippie/ipv6nat/compare/v2.0.0...v2.1.0) (2025-11-17)
